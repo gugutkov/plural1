@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                powershell:script:"-version"
+                powershell:script:("-version")
                 
             }
         }
