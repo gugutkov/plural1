@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                sh('pwsh ping 8.8.8.8')
+                sh('pwsh -version')
                 
             }
         }
