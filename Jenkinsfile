@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                pwsh(script:'docker images -a')
+                pwsh(script:'ping 8.8.8.8')
                 
             }
         }
