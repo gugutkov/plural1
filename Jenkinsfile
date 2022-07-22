@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Docker Build'){
             steps{
-                PowerShell(". '.\\disk-usage.ps1'; du -Verbose")
+                pwsh(". '.\\disk-usage.ps1'; du -Verbose")
                 
             }
         }
