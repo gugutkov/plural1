@@ -7,10 +7,6 @@ pipeline {
             }
         }
         stage('Docker Build'){
-            steps{
-                pwsh(". '.\\disk-usage.ps1'; du -Verbose")
-                
-            }
-        }
+       
     }
 }
